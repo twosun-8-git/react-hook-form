@@ -20,18 +20,20 @@ import {
   Alert,
 } from "@mui/material";
 
-enum Gender {
-  empty = "",
-  female = "female",
-  male = "male",
-  other = "other",
-}
+const Gender = {
+  empty: "",
+  female: "female",
+  male: "male",
+  other: "other",
+} as const;
 
-enum NewsLatter {
-  receive = "receive",
-  reject = "reject",
-}
+const NewsLatter = {
+  receive: "receive",
+  reject: "reject",
+} as const;
 
+type Gender = (typeof Gender)[keyof typeof Gender];
+type NewsLatter = (typeof NewsLatter)[keyof typeof NewsLatter];
 type Inputs = {
   fullName: string;
   gender: Gender;
