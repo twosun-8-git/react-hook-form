@@ -20,17 +20,17 @@ export default function Page() {
         </tr>
         <tr>
           <th>
+            <Link href="./mui">mui</Link>
+          </th>
+          <td>MUI(Material UI)とreact-hook-formを使ったフォーム</td>
+        </tr>
+        <tr>
+          <th>
             <Link href="./onsubmit-validate">onsubmit-validate</Link>
           </th>
           <td>
             onSubmiと送信ボタンにdisabledの組み合わせにより不具合が起きやすいフォーム
           </td>
-        </tr>
-        <tr>
-          <th>
-            <Link href="./mui">mui</Link>
-          </th>
-          <td>MUI(Material UI)とreact-hook-formを使ったフォーム</td>
         </tr>
       </tbody>
     </table>
