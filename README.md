@@ -1,6 +1,10 @@
-# react-hook-form
+# Validation for Zod and pure HTML
 
-このリポジトリは**react-hook-form**の基本的な使い方を記載したリポジトリです。
+このリポジトリは Zenn の記事 **「react-hook-form の使い方」** と連動したリポジトリです。
+
+## 📄 記事へのリンクはこちら
+
+[react-hook-form の使い方](https://zenn.dev/cocomina/articles/how-to-use-react-hook-form)
 
 ## 🛠️ 開発環境
 
