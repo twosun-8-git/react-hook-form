@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./style.css";
 
 export const metadata: Metadata = {
-  title: "My react hook form",
+  title: "My react-hook-form",
   description: "react-hook-formのサンプルです。",
 };
 
@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <div className="wrapper">
-          <h2 className="title">my react hook form</h2>
+          <h1 className="title">my react-hook-form</h1>
           {children}
         </div>
       </body>
