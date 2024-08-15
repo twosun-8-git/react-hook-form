@@ -112,6 +112,13 @@ td {
   scale: 1.5;
   margin-right: 8px;
 }
+.radio-group {
+  display: flex;
+  gap: 40px;
+}
+.radio-group label {
+  width: fit-content;
+}
 .button-group {
   display: flex;
   justify-content: flex-end;

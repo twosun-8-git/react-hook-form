@@ -221,24 +221,33 @@ export default function Page() {
             >
               <label htmlFor="newsLatter">お知らせ</label>
               <div className="form-group">
-                <label>
-                  <input
-                    type="radio"
-                    {...field}
-                    value={NewsLatter.receive}
-                    checked={field.value === NewsLatter.receive}
-                  />
-                  受け取る
-                </label>
-                <label>
-                  <input
-                    type="radio"
-                    {...field}
-                    value={NewsLatter.reject}
-                    checked={field.value === NewsLatter.reject}
-                  />
-                  受け取らない
-                </label>
+                <div>
+                  <div className="radio-group">
+                    <label>
+                      <input
+                        type="radio"
+                        {...field}
+                        value={NewsLatter.receive}
+                        checked={field.value === NewsLatter.receive}
+                      />
+                      受け取る
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        {...field}
+                        value={NewsLatter.reject}
+                        checked={field.value === NewsLatter.reject}
+                      />
+                      受け取らない
+                    </label>
+                  </div>
+                  {fieldState.error && (
+                    <span className="error-message">
+                      {fieldState.error.message}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
           )}

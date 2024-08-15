@@ -114,7 +114,7 @@ export default function Page() {
                     {fieldState.error.message}
                   </span>
                 )}
-              </div>{" "}
+              </div>
             </div>
           )}
         />
@@ -129,29 +129,36 @@ export default function Page() {
               className={`form-group ${!!fieldState.error ? `is-error` : ``}`}
             >
               <label htmlFor="newsLatter">お知らせ</label>
-              <div className="form-group">
-                <label>
-                  <input
-                    type="radio"
-                    {...field}
-                    value={NewsLatter.receive}
-                    checked={field.value === NewsLatter.receive}
-                  />
-                  受け取る
-                </label>
-                <label>
-                  <input
-                    type="radio"
-                    {...field}
-                    value={NewsLatter.reject}
-                    checked={field.value === NewsLatter.reject}
-                  />
-                  受け取らない
-                </label>
+              <div>
+                <div className="radio-group">
+                  <label>
+                    <input
+                      type="radio"
+                      {...field}
+                      value={NewsLatter.receive}
+                      checked={field.value === NewsLatter.receive}
+                    />
+                    受け取る
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      {...field}
+                      value={NewsLatter.reject}
+                      checked={field.value === NewsLatter.reject}
+                    />
+                    受け取らない
+                  </label>
+                </div>
+                {fieldState.error && (
+                  <span className="error-message">
+                    {fieldState.error.message}
+                  </span>
+                )}
               </div>
             </div>
           )}
-        />{" "}
+        />
         <Controller
           name="agree"
           rules={{ required: "チェックボックスをチェックしてください" }}
@@ -162,7 +169,7 @@ export default function Page() {
             >
               <div>
                 <label>
-                  <input type="checkbox" checked={value} {...rest} />{" "}
+                  <input type="checkbox" checked={value} {...rest} />
                   <span>利用規約に同意する</span>
                 </label>
                 {fieldState.error && (
