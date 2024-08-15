@@ -151,7 +151,7 @@ export default function Page() {
             >
               <label htmlFor="fullName">名前</label>
               <div>
-                <input id="fullName" {...field} />
+                <input id="fullName" type="text" {...field} />
                 {fieldState.error && (
                   <span className="error-message">
                     {fieldState.error.message}
