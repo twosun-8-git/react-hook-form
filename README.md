@@ -44,3 +44,8 @@ npm run dev
 ```
 
 #### 4. http://localhost:3000 にアクセス
+
+## 📄 関連リポジトリ
+
+- [react-hook-from x Zod](https://github.com/twosun-8-git/react-hook-form-zod)
+- [react-hook-form x Yup](https://github.com/twosun-8-git/react-hook-form-yup)
