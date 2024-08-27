@@ -1,10 +1,7 @@
 # How to use react-hook-form
 
-このリポジトリは Zenn の記事 **「react-hook-form の使い方」** と連動したリポジトリです。
-
-## 📄 記事へのリンクはこちら
-
-[react-hook-form の使い方](https://zenn.dev/cocomina/articles/how-to-use-react-hook-form)
+このリポジトリは Zenn の記事 **[「🪝 react-hook-form の使い方」](https://zenn.dev/cocomina/articles/how-to-use-react-hook-form)**
+と連動したリポジトリです。
 
 ## 🛠️ 開発環境
 
